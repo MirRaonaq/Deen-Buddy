@@ -33,7 +33,7 @@ A beautiful, modern iOS-style React Native app designed to help Muslims with the
 
 1. **Clone or navigate to the project:**
    ```bash
-   cd "C:\Users\raona\OneDrive\Desktop\React App\MyiOSApp"
+   cd "to app"
    ```
 
 2. **Install dependencies:**
