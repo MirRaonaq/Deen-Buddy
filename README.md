@@ -1,97 +1,134 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Deen Buddy - Islamic Companion App
 
-# Getting Started
+A beautiful, modern iOS-style React Native app designed to help Muslims with their daily Islamic practices.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+## 🌟 Features
 
-## Step 1: Start Metro
+### Current Features
+- **Prayer Times Display** - Shows all five daily prayers with next prayer highlighting
+- **Modern iOS Design** - Clean, beautiful interface with dark mode support
+- **Feature Cards** - Quick access to various Islamic tools
+- **Quick Actions** - Fast access to prayer and qibla features
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+### Planned Features
+- **Prayer Times API Integration** - Real-time prayer times based on location
+- **Qibla Finder** - Compass-based direction finder
+- **Quran Reader** - Complete Quran with audio recitation
+- **Dhikr Counter** - Digital tasbih with customizable counters
+- **Islamic Calendar** - Hijri calendar with important dates
+- **Dua Collection** - Authentic duas for various occasions
+- **Prayer Reminders** - Push notifications for prayer times
+- **Adhan Player** - Beautiful adhan audio for prayer calls
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+## 🚀 Getting Started
 
-```sh
-# Using npm
-npm start
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
+- React Native CLI
+- For iOS development: Xcode (macOS only)
+- For Android development: Android Studio
 
-# OR using Yarn
-yarn start
+### Installation
+
+1. **Clone or navigate to the project:**
+   ```bash
+   cd "C:\Users\raona\OneDrive\Desktop\React App\MyiOSApp"
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the Metro bundler:**
+   ```bash
+   npm start
+   ```
+
+4. **Run on Android (if you have Android setup):**
+   ```bash
+   npm run android
+   ```
+
+5. **Run on iOS (requires macOS and Xcode):**
+   ```bash
+   npm run ios
+   ```
+
+## 📱 App Structure
+
+```
+DeenBuddy/
+├── App.tsx              # Main app component
+├── app.json             # App configuration
+├── package.json         # Dependencies
+├── ios/                 # iOS-specific code
+├── android/             # Android-specific code
+└── README.md           # This file
 ```
 
-## Step 2: Build and run your app
+## 🎨 Design Features
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+- **iOS-Style Interface** - Clean, modern design following iOS guidelines
+- **Dark Mode Support** - Automatic dark/light mode switching
+- **Responsive Layout** - Works on all screen sizes
+- **Smooth Animations** - Native feel with React Native
+- **Islamic Color Scheme** - Green and blue theme representing peace and spirituality
 
-### Android
+## 🔧 Development
 
-```sh
-# Using npm
-npm run android
+### Adding New Features
+1. Create new components in a `components/` folder
+2. Add navigation using React Navigation
+3. Implement state management with Redux or Context API
+4. Add API integrations for prayer times and other services
 
-# OR using Yarn
-yarn android
-```
+### Styling Guidelines
+- Use the existing color scheme: `#4CAF50` (green), `#2196F3` (blue)
+- Follow iOS design patterns with rounded corners and shadows
+- Maintain consistent spacing and typography
+- Support both light and dark modes
 
-### iOS
+## 📦 Dependencies
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+- **React Native** - Core framework
+- **React** - UI library
+- **TypeScript** - Type safety
+- **ESLint & Prettier** - Code quality
+- **Jest** - Testing framework
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+## 🚀 Deployment
 
-```sh
-bundle install
-```
+### For iOS
+1. Requires macOS and Xcode
+2. Configure signing certificates
+3. Build and archive in Xcode
+4. Upload to App Store Connect
 
-Then, and every time you update your native dependencies, run:
+### For Android
+1. Configure signing keys
+2. Build APK or AAB
+3. Upload to Google Play Console
 
-```sh
-bundle exec pod install
-```
+## 🤝 Contributing
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
 
-```sh
-# Using npm
-npm run ios
+## 📄 License
 
-# OR using Yarn
-yarn ios
-```
+This project is licensed under the MIT License.
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+## 🙏 Acknowledgments
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+- React Native community
+- Islamic scholars and resources
+- Open source contributors
 
-## Step 3: Modify your app
+---
 
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+**Deen Buddy** - Your Islamic Companion App 🌙
